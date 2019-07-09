@@ -1,0 +1,3 @@
+class AlbumReviews::Reviews
+
+end

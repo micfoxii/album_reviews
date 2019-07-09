@@ -2,3 +2,5 @@
 require_relative '../lib/album_reviews'
 
 AlbumReviews::CLI.new.call
+
+
