@@ -22,9 +22,8 @@ class AlbumReviews::CLI
     end
 
     def get_user_selection
-        selected_album = gets.strip
-        if valid_input(selected_album.to_i, @albums)
-            show_album_info_for(selected_album)
+        selected_album = gets.strip.to_i
+        show_album_info_for(selected_album) if valid_input(selected_album.to_i, @albums)      
     end
 
     def valid_input(input, data)
@@ -32,6 +31,7 @@ class AlbumReviews::CLI
     end
 
     def show_album_info_for(selected_album)
-
+        album = @albums[selected_album - 1]
+        puts "album.review"
     end
 end
